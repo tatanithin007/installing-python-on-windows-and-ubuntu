@@ -1,0 +1,11 @@
+{
+	"apiUrl":"https://msbauthentication.com/autocontrol/api/getdevicecampaignuplfile.php?deviceid=test123",
+	"apiKey":"",		
+    "startupscript":"index.py",
+	"scriptlocation":"C:\\Files",
+	"lfolder":"log",
+	"lfile":"api.log",	
+	"searchstring":"Yes",
+	"trackfolder":"track",
+	"pyjobtracklog":"pyjobtrack.log"
+}
