@@ -17,4 +17,4 @@ Copy-Item "getdatafromapi.ps1" -Destination "C:\API"
 Copy-Item "trackpyjob.ps1" -Destination "C:\API"
 Register-ScheduledTask -xml (Get-Content 'getdatafromapi.xml' | Out-String) -TaskName "getdatafromapi" -TaskPath "\MyTasks" -User $env:userdomain\$env:username -Force
 Register-ScheduledTask -xml (Get-Content 'trackpyjob.xml' | Out-String) -TaskName "trackpyjob" -TaskPath "\MyTasks" -User $env:userdomain\$env:username -Force
-Set-ExecutionPolicy unrestricted
+Set-ExecutionPolicy Bypass
