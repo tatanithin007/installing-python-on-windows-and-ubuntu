@@ -7,7 +7,13 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install -y python3
 #py -v
 py get_pip.py
-pip install -r requirements.txt
+#pip install -r requirements.txt
+py install_requirements.py
+& .\ChromeSetup.exe
+& .\OperaSetup.exe
+& .\Vivaldi.5.0.2497.32.x64.exe
+& .\chromium.exe
+& .\devChromeSetup.exe
 New-Item -Path 'C:\API' -ItemType Directory
 New-Item -Path 'C:\API\config' -ItemType Directory
 New-Item -Path 'C:\API\log' -ItemType Directory
