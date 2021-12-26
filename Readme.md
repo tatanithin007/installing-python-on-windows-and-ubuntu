@@ -2,18 +2,17 @@
 
 Copy chrome.exe from local machine, install chrome and open https://github.com/tatanithin007/installing-python-on-windows-and-ubuntu
 
-downloa the zip fille and open powershell in the downloaded folder
+download the zip fille and open powershell in the downloaded folder
 
-1:need to update device id on config.json
-2:open power shell with administrator from start menu
 3:copy and paste the folder path where script files are present
-4:paste beklow command on panel and click enter
-
-Set-ExecutionPolicy unrestricted
 
 5:type below command on powershell and press enter 
 
 autocontroll.ps1 
+
+If any error comes up give below command: 
+
+Set-ExecutionPolicy unrestricted
 
 This will install all the 5 browsers,please click accept and isntall for opera and vivaldi.
 

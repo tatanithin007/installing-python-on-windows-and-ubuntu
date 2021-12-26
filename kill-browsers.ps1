@@ -1,3 +1,5 @@
+py install_requirements.py
+py change_device_id.py
 Stop-Process -Name chrome
 Stop-Process -Name opera
 Stop-Process -Name vivaldi

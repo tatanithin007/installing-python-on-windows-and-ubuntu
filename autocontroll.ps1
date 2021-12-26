@@ -8,8 +8,6 @@ choco install -y python3
 #py -v
 py get_pip.py
 #pip install -r requirements.txt
-py install_requirements.py
-py change_device_id.py
 & .\ChromeSetup.exe
 & .\OperaSetup.exe
 & .\Vivaldi.5.0.2497.32.x64.exe
