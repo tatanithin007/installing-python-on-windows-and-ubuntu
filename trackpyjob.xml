@@ -48,7 +48,7 @@
   <Actions Context="Author">
     <Exec>
       <Command>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Command>
-      <Arguments>C:\API\trackpyjob.ps1</Arguments>
+      <Arguments>[console]::windowwidth=10; [console]::windowheight=10; C:\API\trackpyjob.ps1</Arguments>
     </Exec>
   </Actions>
 </Task>
