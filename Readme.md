@@ -29,7 +29,7 @@ keep in develoer mode add extensions and extract id
 7:double click on install_requirements.py
 
 
-#startUp.ps1 is for to install python and autocontroll on windows 
+###startUp.ps1 is for to install python and autocontroll on windows 
 1. Copy the from local machine and open powershell 
 2. Copy and paste the folder path where script file is present
 3. type the below command on powershell and press enter
