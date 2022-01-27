@@ -33,7 +33,7 @@ keep in develoer mode add extensions and extract id
 1. Copy the from local machine and open powershell 
 2. Copy and paste the folder path where script file is present
 3. type the below command on powershell and press enter
-##### startUp.ps1 --GoogleFileId(Google drive Id)
+##### startUp.ps1 --GoogleFileId (Google drive Id)
 
 
 This will install all the 5 browsers,please click accept and isntall for opera and vivaldi.
