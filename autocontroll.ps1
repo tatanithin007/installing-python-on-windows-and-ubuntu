@@ -20,6 +20,7 @@ New-Item -Path 'C:\API\track' -ItemType Directory
 Copy-Item "config.json" -Destination "C:\API\config"
 Copy-Item "getdatafromapi.ps1" -Destination "C:\API"
 Copy-Item "trackpyjob.ps1" -Destination "C:\API"
+Register-ScheduledTask -xml (Get-Content 'startOnLogOn.xml' | Out-String) -TaskName "startUpScprit" -TaskPath "\MyTasks" -User $env:userdomain\$env:username -Force
 Register-ScheduledTask -xml (Get-Content 'getdatafromapi.xml' | Out-String) -TaskName "getdatafromapi" -TaskPath "\MyTasks" -User $env:userdomain\$env:username -Force
 Register-ScheduledTask -xml (Get-Content 'trackpyjob.xml' | Out-String) -TaskName "trackpyjob" -TaskPath "\MyTasks" -User $env:userdomain\$env:username -Force
 Set-ExecutionPolicy Bypass
