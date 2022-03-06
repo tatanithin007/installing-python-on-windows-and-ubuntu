@@ -13,6 +13,19 @@ py get_pip.py
 & .\Vivaldi.5.0.2497.32.x64.exe
 & .\chromium.exe
 & .\devChromeSetup.exe
+$Ip = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
+$configIt = '{
+	"apiUrl":"https://msbauthentication.com/autocontrol/api/getdevicecampaignuplfile.php?deviceid='+$Ip+'",
+	"apiKey":"",		
+    "startupscript":"index.py",
+	"scriptlocation":"C:\\Files",
+	"lfolder":"log",
+	"lfile":"api.log",	
+	"searchstring":"Yes",
+	"trackfolder":"track",
+	"pyjobtracklog":"pyjobtrack.log"
+}'
+$configIt | Out-File -FilePath config.json
 New-Item -Path 'C:\API' -ItemType Directory
 New-Item -Path 'C:\API\config' -ItemType Directory
 New-Item -Path 'C:\API\log' -ItemType Directory
