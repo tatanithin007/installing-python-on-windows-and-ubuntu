@@ -4,24 +4,20 @@
     <Date>2020-09-19T22:24:50.6685652</Date>
     <Author>aa01\Azureuser</Author>
     <Description>get data from api</Description>
-    <URI>\getdatafromapi</URI>
+    <URI>\MyTasks\getdatafromapi</URI>
   </RegistrationInfo>
   <Triggers>
-    <CalendarTrigger>
+    <LogonTrigger>
       <Repetition>
         <Interval>PT1M</Interval>
         <StopAtDurationEnd>false</StopAtDurationEnd>
       </Repetition>
-      <StartBoundary>2020-09-19T22:23:44</StartBoundary>
       <Enabled>true</Enabled>
-      <ScheduleByDay>
-        <DaysInterval>1</DaysInterval>
-      </ScheduleByDay>
-    </CalendarTrigger>
+    </LogonTrigger>
   </Triggers>
   <Principals>
     <Principal id="Author">
-      <UserId>S-1-5-21-2881347501-1418640455-480928603-500</UserId>
+      <UserId>S-1-5-21-2907782432-2496773613-3472087962-500</UserId>
       <LogonType>InteractiveToken</LogonType>
       <RunLevel>HighestAvailable</RunLevel>
     </Principal>
